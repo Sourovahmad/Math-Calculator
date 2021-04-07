@@ -6,8 +6,6 @@ import Routers from './Routers/myRouters';
  
 function App() {
   return (
-
-
     <div>
        <BrowserRouter>   
                <Routers/>
