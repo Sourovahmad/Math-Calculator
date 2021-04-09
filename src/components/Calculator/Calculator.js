@@ -4,7 +4,7 @@ import "./Calculator.css";
 const Calculator = () => {
 
 
-  const [outPut, SetOutput] = useState(15);
+  
 
               const acButton = () => {
 
@@ -13,52 +13,52 @@ const Calculator = () => {
               }
 
 
-              const devideButton = () => {
+              const devideButton = (props) => {
 
-                alert('this is / ')
-
-              }
-
-
-              const seven = () => {
-
-                alert('this is 7 button ')
+                alert()
 
               }
 
-              const eight = () => {
 
-                alert('this is seven 8 ')
+              const seven = (props) => {
+
+                alert()
 
               }
 
-              const nine = () => {
+              const eight = (props) => {
 
-                alert('this is  9 ')
+                alert()
+
+              }
+
+              const nine = (props) => {
+
+                alert()
 
               }
 
               const multiply = () => {
 
-                alert('this is  * ')
+                alert('this is *')
 
               }
 
 
 
-              const four = () => {
+              const four = (props) => {
 
-                alert('this is  4 ')
-
-              }
-              const five = () => {
-
-                alert('this is  5 ')
+                alert()
 
               }
-              const six = () => {
+              const five = (props) => {
 
-                alert('this is  6 ')
+                alert()
+
+              }
+              const six = (props) => {
+
+                alert()
 
               }
               const minus = () => {
@@ -66,19 +66,19 @@ const Calculator = () => {
                 alert('this is  - ')
 
               }
-              const one = () => {
+              const one = (props) => {
 
-                alert('this is  1 ')
-
-              }
-              const two = () => {
-
-                alert('this is  2 ')
+                alert()
 
               }
-              const three = () => {
+              const two = (props) => {
 
-                alert('this is  3 ')
+                alert()
+
+              }
+              const three = (props) => {
+
+                alert()
 
 
               }
@@ -119,67 +119,67 @@ const Calculator = () => {
           <div className='buttons'>
             <table>
               <tr>
-                <td colspan="4">
-                  <div className='display'> <input type='text' className="form-control display" id='display' value={outPut} /></div>
+                <td colSpan="4">
+                  <div className='display'> <input type='text' className="form-control display" id='display'  /></div>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <button className='btn br calcBtn' id='ac' onClick={() => acButton()}>AC</button>
+                  <button className='btn br calcBtn' id='ac' onClick={() => acButton('ac')}>AC</button>
                 </td>
                 <td>
-                  <button className='btn  br calcBtn' id='div' onClick={() => devideButton()}>&#247; </button>
+                  <button className='btn  br calcBtn' id='div' onClick={() => devideButton('/')}>&#247; </button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <button className='btn  br calcBtn' id='seven' onClick={() => seven()} >7 </button>
+                  <button className='btn  br calcBtn' id='seven' onClick={() => seven(7)} >7 </button>
                 </td>
                 <td>
-                  <button className='btn  br calcBtn' id='eight' onClick={() => eight()}>8 </button>
+                  <button className='btn  br calcBtn' id='eight' onClick={() => eight(8)}>8 </button>
                 </td>
                 <td>
-                  <button className='btn  br calcBtn' id='nine' onClick={() => nine()}>9 </button>
+                  <button className='btn  br calcBtn' id='nine' onClick={() => nine(9)}>9 </button>
                 </td>
                 <td>
-                  <button className='btn  br calcBtn' id='mult' onClick={() => multiply()}>x </button>
+                  <button className='btn  br calcBtn' id='mult' onClick={() => multiply('*')}>x </button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <button className='btn  br calcBtn' id='four' onClick={() => four()}> 4</button>
+                  <button className='btn  br calcBtn' id='four' onClick={() => four(4)}> 4</button>
                 </td>
                 <td>
-                  <button className='btn  br calcBtn' id='five' onClick={() => five()}>5 </button>
+                  <button className='btn  br calcBtn' id='five' onClick={() => five(5)}>5 </button>
                 </td>
                 <td>
-                  <button className='btn  br calcBtn' id='six' onClick={() => six()}>6 </button>
+                  <button className='btn  br calcBtn' id='six' onClick={() => six(6)}>6 </button>
                 </td>
                 <td>
-                  <button className='btn  br calcBtn' id='min' onClick={() => minus()}>- </button>
+                  <button className='btn  br calcBtn' id='min' onClick={() => minus('-')}>- </button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <button className='btn  br calcBtn' id='one' onClick={() => one()}>1 </button>
+                  <button className='btn  br calcBtn' id='one' onClick={() => one(1)}>1 </button>
                 </td>
                 <td>
-                  <button className='btn  br calcBtn' id='two' onClick={() => two()}>2 </button>
+                  <button className='btn  br calcBtn' id='two' onClick={() => two(2)}>2 </button>
                 </td>
                 <td>
-                  <button className='btn  br calcBtn' id='three' onClick={() => three()}>3 </button>
+                  <button className='btn  br calcBtn' id='three' onClick={() => three(3)}>3 </button>
                 </td>
-                <td rowspan="2">
-                  <button className='btn  br calcBtn' id='plus' onClick={() => sum()}>+</button>
+                <td rowSpan="2">
+                  <button className='btn  br calcBtn' id='plus' onClick={() => sum('+')}>+</button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <button className='btn  br calcBtn' id='zero' onClick={() => zero()}>0 </button>
+                  <button className='btn  br calcBtn' id='zero' onClick={() => zero(0)}>0 </button>
                 </td>
 
                 <td>
-                  <button className='btn  br calcBtn' id='equal' onClick={() => equal()}>= </button>
+                  <button className='btn  br calcBtn' id='equal' onClick={() => equal('=')}>= </button>
                 </td>
               </tr>
             </table>
