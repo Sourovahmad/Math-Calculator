@@ -1,14 +1,13 @@
 
 import './App.css';
-import Navbar from './Components/Navbar/Navbar'
+import Section from './Components/Sections/Section';
 
 
  
 function App() {
   return (
     <div>
-             <Navbar/>     
-
+          <Section/>
     </div>
   );
 }
