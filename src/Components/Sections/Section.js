@@ -1,7 +1,13 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import './section.css';
 
 const Section = () => {
+
+    const power = 3 + 3;
+
+  
+                
     return (
         <div>
             <div className="container-fluid" style={{ backgroundColor: "#F5F5F5", height: "400px" }}>
